@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>From the blog:</h1>
+<ol>
+    {% for post in posts %}
+    <li>{{ post }} - {{ post.author }}- <a href="{% url 'detail' post.id %}">Read more</a></li>
+    {% endfor %}
+</ol>
+{% endblock %}
