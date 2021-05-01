@@ -1,3 +1,7 @@
+"""
+    blog/tests.py
+    -------------
+"""
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
@@ -45,8 +49,32 @@ class BlogTest(TestCase):
     def test_post_detail_view_response_template_and_contains(self):
         """
         To test:    1. Assert a response
-                    2. Asserts a template rendering the response
+                    2. Assert a template rendering the response
         """
         r = self.client.get('/post/1/')
         self.assertContains(r, 'A good title')
         self.assertTemplateUsed(r, 'detail.html')
+
+    def test_post_create_view(self):
+        """ C: Check if create works. """
+        response = self.client.post(reverse('new'), {
+            'title': 'New title',
+            'body': 'New text',
+            'author': self.user,
+        })
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'New title')
+        self.assertContains(response, 'New text')
+
+    def test_post_update_view(self):
+        """ U: Check if update works. """
+        response = self.client.post(reverse('edit', args='1'), {
+            'title': 'Updated title',
+            'body': 'Updated text',
+        })
+        self.assertEqual(response.status_code, 200)
+
+    def test_post_delete_view(self):
+        """ D: Check if delete works. """
+        response = self.client.get(reverse('delete', args='1'))
+        self.assertEqual(response.status_code, 200)

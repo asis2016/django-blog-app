@@ -3,7 +3,13 @@
 {% block content %}
 
 <h1>Id: {{ post.id }} - {{ post.title }}</h1>
-<p>Posted by: {{ post.author }}</p>
+<p>Posted by: {{ post.author }}
+    |
+    <a href="{% url 'edit' post.id %}">Edit</a>
+    |
+    <a href="{% url 'delete' post.id %}">Delete</a>
+</p>
+<p></p>
 <div>
     <p>
         {{ post.body }}
