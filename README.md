@@ -8,10 +8,15 @@ This is a simple demonstration of Blog (app) made in Django.
 ## Tech Stack
 Python, Django, Gunicorn, Heroku
 
-  
+
+## Demo
+
+[https://basic-blog-app-amaharjan.herokuapp.com/](https://basic-blog-app-amaharjan.herokuapp.com/)
+
+
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables:
 
 `SECRET_KEY` `django-insecure-jhrq9t==0!ysg^6*ut@ort)!@wohm)g^k(xn@515$$=h39(6b(e`
 
@@ -43,7 +48,31 @@ Start the project
   
 ## Demo with Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+[index](https://basic-blog-app-amaharjan.herokuapp.com/)
+
+![index](/screenshots/a.png)
+
+### Read a post
+[/post/{id}/](https://basic-blog-app-amaharjan.herokuapp.com/post/1/)
+
+![read](/screenshots/b.png)
+
+### Edit the post
+[/post/{id}/edit/](https://basic-blog-app-amaharjan.herokuapp.com/post/1/edit/)
+
+![edit](/screenshots/c.png)
+
+### Delete the post
+[/post/{id}/delete/](https://basic-blog-app-amaharjan.herokuapp.com/post/1/delete/)
+
+![delete](/screenshots/d.png)
+
+### Create a post
+[/post/new/](https://basic-blog-app-amaharjan.herokuapp.com/post/new/)
+
+![create](/screenshots/e.png)
+
+
 
   
 ## Roadmap
