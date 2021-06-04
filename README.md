@@ -1,15 +1,19 @@
+
 # A Basic Django Blog App
+
 This is a simple demonstration of Blog (app) made in Django.
+
+
 
 ## Tech Stack
 Python, Django, Gunicorn, Heroku
 
+  
 ## Environment Variables
-To run this project, you will need to add the following environment variables
+
+To run this project, you will need to add the following environment variables to your .env file
 
 `SECRET_KEY` `django-insecure-jhrq9t==0!ysg^6*ut@ort)!@wohm)g^k(xn@515$$=h39(6b(e`
-
-`ANOTHER_API_KEY`
 
   
 ## Run Locally
@@ -17,25 +21,23 @@ To run this project, you will need to add the following environment variables
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/asis2016/django-blog-app.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd django-blog-app
 ```
 
-Install dependencies
+Start the project
 
 ```bash
-  npm install
+  docker build .
 ```
 
-Start the server
-
 ```bash
-  npm run start
+  docker-compose up -d
 ```
 
   
@@ -46,35 +48,9 @@ Start the server
   
 ## Roadmap
 
-- Additional browser support
-
-- Add more integrations
+- This project doesn't include authentication and authorization. These features can be found on [django-newspaper-app](https://github.com/asis2016/django-newspaper-app).
 
   
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
-
-  
-
-
-
-
-
-
-
-
-
-
-
-# A Simple Django Blog App
-
-## v1
-    contains:
-        1. Templates
-        1. Forms for CRUD
-
-## v2
-    will contain:
-        1. User Accounts
-        2. Heroku 
+If you have any feedback, please reach out to us at hello@amaharjan.com
