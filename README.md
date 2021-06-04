@@ -1,7 +1,7 @@
 
 # A Basic Django Blog App
 
-This is a simple demonstration of Blog (app) made in Django framework.
+This is a simple demonstration of a Blog (app) made in Django framework.
 
 
 
