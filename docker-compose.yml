@@ -6,7 +6,7 @@ services:
     #command: python /code/manage.py runserver 0.0.0.0:8000
     command: gunicorn blog_project.wsgi -b 0.0.0.0:8000
     environment:
-      - SECRET_KEY=django-insecure-jhrq9t==0!ysg^6*ut@ort)!@wohm)g^k(xn@515$$=h39(6b(e
+      - SECRET_KEY=check_readme.md
       - DEBUG=1    
     volumes:
       - .:/code
