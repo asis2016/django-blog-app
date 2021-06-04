@@ -1,12 +1,12 @@
 
 # A Basic Django Blog App
 
-This is a simple demonstration of Blog (app) made in Django.
+This is a simple demonstration of Blog (app) made in Django framework.
 
 
 
 ## Tech Stack
-Python, Django, Gunicorn, Heroku
+Docker 20.10.6, Python 3.8, Django 3.2.3, Whitenoise, Gunicorn, Heroku
 
 
 ## Demo
@@ -52,6 +52,16 @@ To run tests, run the following command
 ```bash
   docker-compose exec web python manage.py test
 ```
+
+## Running the project locally
+
+Goto [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+### Running Django Administration
+
+Goto [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+- username: root
+- password: root
 
   
 ## Demo with Screenshots
